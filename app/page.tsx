@@ -1,7 +1,9 @@
+import LandingPage from "./landingPage/page";
+
 export default function Home() {
   return (
     <main className="main">
-      <h1>Hello world</h1>
+      <LandingPage></LandingPage>
     </main>
   );
 }
