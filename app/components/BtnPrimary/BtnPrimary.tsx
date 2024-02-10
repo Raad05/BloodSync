@@ -7,7 +7,10 @@ interface BtnPrimaryProps {
 
 const BtnPrimary = ({ children, onClick }: BtnPrimaryProps) => {
   return (
-    <button onClick={onClick} className="mx-3 p-2">
+    <button
+      onClick={onClick}
+      className="mx-1 px-3 py-2 bg-red-700 text-white rounded font-bold"
+    >
       {children}
     </button>
   );

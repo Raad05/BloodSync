@@ -4,7 +4,7 @@ import AuthBtn from "../AuthBtn/AuthBtn";
 
 const Navbar = () => {
   return (
-    <nav className="header-section flex justify-around items-center py-3 border">
+    <nav className="header-section flex justify-around items-center py-3">
       <Link href="/">Home</Link>
       <div className="nav-links">
         <Link className="mx-5" href="/">

@@ -7,7 +7,10 @@ interface BtnSecondaryProps {
 
 const BtnSecondary = ({ children, onClick }: BtnSecondaryProps) => {
   return (
-    <button onClick={onClick} className="mx-3 p-2">
+    <button
+      onClick={onClick}
+      className="mx-1 px-3 py-2 border border-red-700 bg-white text-red-700 rounded font-bold"
+    >
       {children}
     </button>
   );
