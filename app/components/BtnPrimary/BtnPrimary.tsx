@@ -2,10 +2,15 @@ import React, { ReactNode } from "react";
 
 interface BtnPrimaryProps {
   children: ReactNode;
+  onClick: () => void;
 }
 
-const BtnPrimary = ({ children }: BtnPrimaryProps) => {
-  return <button className="mx-3 p-2">{children}</button>;
+const BtnPrimary = ({ children, onClick }: BtnPrimaryProps) => {
+  return (
+    <button onClick={onClick} className="mx-3 p-2">
+      {children}
+    </button>
+  );
 };
 
 export default BtnPrimary;

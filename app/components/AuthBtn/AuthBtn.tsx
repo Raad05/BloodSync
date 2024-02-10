@@ -1,11 +1,17 @@
+"use client";
+
 import BtnPrimary from "../BtnPrimary/BtnPrimary";
 import BtnSecondary from "../BtnSecondary/BtnSecondary";
+
+const clicked = () => {
+  console.log("Clicked");
+};
 
 const AuthBtn = () => {
   return (
     <div className="auth-btn">
-      <BtnPrimary>Login</BtnPrimary>
-      <BtnSecondary>Signup</BtnSecondary>
+      <BtnPrimary onClick={clicked}>Login</BtnPrimary>
+      <BtnSecondary onClick={clicked}>Signup</BtnSecondary>
     </div>
   );
 };
