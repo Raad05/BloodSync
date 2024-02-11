@@ -1,7 +1,7 @@
 .header-section{
     font-family: "Vollkorn", serif;
     font-weight: 600;
-    color: #27272A;
+    color: var(--black-color);
     position: fixed;
     width: 100%;
     top: 0;
@@ -9,6 +9,7 @@
     margin-top: 13px;
     z-index: var(--z-fixed);
     transition: box-shadow .4s;
+    position: relative;
 }
 
 nav{
