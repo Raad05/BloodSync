@@ -22,7 +22,7 @@ nav{
     display: flex;
     column-gap: .5rem;
     align-items: center;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primary-red);
 }
 
