@@ -1,24 +1,28 @@
-/* .header{
+.header-section{
     font-family: "Vollkorn", serif;
     font-weight: 600;
+    color: #27272A;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: var(--body-color);
+    margin-top: 13px;
     z-index: var(--z-fixed);
     transition: box-shadow .4s;
 }
 
 nav{
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-logo{
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    font-size: 24px;
     display: flex;
     column-gap: .5rem;
     align-items: center;
@@ -107,4 +111,4 @@ nav{
     right: 1.5rem;
     cursor: pointer;
 }
- */
+

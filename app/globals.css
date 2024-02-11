@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url("https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* html {
+html {
     scroll-behavior: smooth;
   }
 
@@ -27,11 +27,7 @@
     margin: 0;
 }
 
-.landing-page {
-    font-family: var(--body-font);
+body{
+    background-color: var(--background-color);
 }
 
-body{
-    background-color: var(--body-color);
-}
- */

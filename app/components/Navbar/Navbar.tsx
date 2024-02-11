@@ -5,7 +5,7 @@ import AuthBtn from "../AuthBtn/AuthBtn";
 const Navbar = () => {
   return (
     <nav className="header-section flex justify-around items-center py-3">
-      <Link href="/">Home</Link>
+      <Link href="/" className="nav-logo">BloodSync</Link>
       <div className="nav-links">
         <Link className="mx-5" href="/">
           Home
@@ -20,7 +20,9 @@ const Navbar = () => {
           Request
         </Link>
       </div>
-      <AuthBtn></AuthBtn>
+      <div className="nav-button">
+        <AuthBtn></AuthBtn>
+      </div>
     </nav>
   );
 };

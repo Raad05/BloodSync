@@ -1,5 +1,5 @@
 "use client";
-
+import "./authBtn.css"
 import BtnPrimary from "../BtnPrimary/BtnPrimary";
 import BtnSecondary from "../BtnSecondary/BtnSecondary";
 
