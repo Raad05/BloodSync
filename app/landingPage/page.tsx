@@ -1,29 +1,37 @@
+"use client";
+
 import React from "react";
-import "./landingpage.css"
+import "./landingpage.css";
 import Image from "next/image";
-import AuthBtn from "../components/AuthBtn/AuthBtn";
+import BtnPrimary from "../components/BtnPrimary/BtnPrimary";
+import BtnSecondary from "../components/BtnSecondary/BtnSecondary";
 
 const LandingPage = () => {
+  const clicked = () => {
+    console.log("Clicked");
+  };
+
   return (
-    <div className="landing-page grid grid-cols-2 gap-4">
-      <div className="landing-page-text-container">
+    <div className="container mx-auto flex justify-center items-center my-20">
+      <div className="w-1/2">
         <h4 className="landing-plus">+</h4>
         <h1 className="landing-page-title-first">
           <span className="title-courage">Courage</span> flows in
         </h1>
         <h1 className="landing-page-title-second">your veins</h1>
-        <div className="nav-button">
-        <AuthBtn></AuthBtn>
+        <div className="text-3xl ml-20">
+          <BtnPrimary onClick={clicked}>Donate Blood</BtnPrimary>
+          <BtnSecondary onClick={clicked}>Request Blood</BtnSecondary>
         </div>
       </div>
-      <div className="landing-page-image-container relative h-[500px] w-full"> {/* Adjust the height as needed */}
-        <Image 
-          src="/blood_donation.jpg" 
-          alt="Blood Donation" 
-          layout="fill" 
-          objectFit="cover"
-        />
-      </div>
+      <Image
+        className="rounded-full"
+        width={600}
+        height={600}
+        src="/blood_donation.jpg"
+        alt="Blood Donation"
+        objectFit="cover"
+      />
     </div>
   );
 };
