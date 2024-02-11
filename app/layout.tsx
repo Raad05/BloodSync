@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./navbar/page";
-import Footer from "./footer/page";
-import Head from "next/head";
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import { Maitree } from "@next/font/google";
 
 export const metadata: Metadata = {
   title: "Blood Donation",
   description: "First ever blood donation platform in Bangladesh",
 };
+
+const maitree = Maitree({
+  subsets: ["latin"],
+  weight: ["200", "400"],
+});
 
 export default function RootLayout({
   children,
@@ -19,11 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
-      <body className={inter.className}>
+      <body className={maitree.className} suppressHydrationWarning={true}>
         <Navbar></Navbar>
         {children}
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </body>
     </html>
   );
