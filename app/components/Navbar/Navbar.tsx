@@ -1,12 +1,22 @@
 import Link from "next/link";
-import "./navbar.css";
 import AuthBtn from "../AuthBtn/AuthBtn";
+import { Rasa } from "next/font/google";
+import styles from "./Navbar.module.css";
+
+const rasa = Rasa({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 const Navbar = () => {
   return (
-    <nav className="header-section flex justify-around items-center py-3">
-      <Link href="/" className="nav-logo">BloodSync</Link>
-      <div className="nav-links">
+    <nav
+      className={`${rasa.className} header-section flex justify-around items-center py-5 text-2xl`}
+    >
+      <Link href="/" className="nav-logo italic">
+        BloodSync
+      </Link>
+      <div className="nav-links" style={{ fontWeight: 600 }}>
         <Link className="mx-5" href="/">
           Home
         </Link>
@@ -20,9 +30,7 @@ const Navbar = () => {
           Request
         </Link>
       </div>
-      <div className="nav-button">
-        <AuthBtn></AuthBtn>
-      </div>
+      <AuthBtn></AuthBtn>
     </nav>
   );
 };

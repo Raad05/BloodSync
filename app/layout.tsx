@@ -1,15 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
-import { Rasa, Vollkorn, Noto_Serif } from "next/font/google";
+import { Vollkorn, Noto_Serif } from "next/font/google";
 import Footer from "./components/Footer/Footer";
-
-// Import Rasa with desired weights and styles
-const rasa = Rasa({
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-});
 
 // Import Vollkorn with desired weights and styles
 const vollkorn = Vollkorn({
@@ -37,10 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        style={{ fontFamily: rasa.style.fontFamily }}
-        suppressHydrationWarning={true}
-      >
+      <body>
         <Navbar></Navbar>
         {children}
         {/* <Footer></Footer> */}

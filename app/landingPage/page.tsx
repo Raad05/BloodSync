@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import "./landingpage.css";
+import styles from "./landingPage.module.css";
 import Image from "next/image";
 import BtnPrimary from "../components/BtnPrimary/BtnPrimary";
 import BtnSecondary from "../components/BtnSecondary/BtnSecondary";
@@ -12,7 +12,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="container mx-auto flex justify-center items-center my-20">
+    <div className="landing-page container mx-auto flex justify-center items-center my-20">
       <div className="w-1/2">
         <h4 className="landing-plus">+</h4>
         <h1 className="landing-page-title-first">
