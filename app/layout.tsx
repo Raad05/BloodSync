@@ -4,13 +4,6 @@ import Navbar from "./components/Navbar/Navbar";
 import { Vollkorn, Noto_Serif } from "next/font/google";
 import Footer from "./components/Footer/Footer";
 
-// Import Vollkorn with desired weights and styles
-const vollkorn = Vollkorn({
-  weight: ["400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-});
-
 // Import Noto Serif with desired weights and styles
 const notoSerif = Noto_Serif({
   weight: ["400", "700"],

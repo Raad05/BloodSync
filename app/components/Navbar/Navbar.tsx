@@ -16,7 +16,7 @@ const Navbar = () => {
       <Link href="/" className="nav-logo italic">
         BloodSync
       </Link>
-      <div className="nav-links" style={{ fontWeight: 600 }}>
+      <div className="nav-links" style={{ fontWeight: 500 }}>
         <Link className="mx-5" href="/">
           Home
         </Link>
