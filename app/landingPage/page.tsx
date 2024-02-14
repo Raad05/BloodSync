@@ -13,13 +13,14 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page container mx-auto flex justify-center items-center my-20">
-      <div className="w-1/2">
-        <h4 className="landing-plus">+</h4>
-        <h1 className="landing-page-title-first">
-          <span className="title-courage">Courage</span> flows in
-        </h1>
-        <h1 className="landing-page-title-second">your veins</h1>
-        <div className="text-3xl ml-20">
+      <div className="flex-1">
+        <div className="w-1/2 relative h-40">
+          <h4 className="primary-text font-bold text-6xl">+</h4>
+          <h3 className="text-6xl font-bold absolute left-5 top-10">
+            <span className="secondary-text">Courage</span> Flows in your Veins
+          </h3>
+        </div>
+        <div className="text-3xl my-5">
           <BtnPrimary onClick={clicked}>Donate Blood</BtnPrimary>
           <BtnSecondary onClick={clicked}>Request Blood</BtnSecondary>
         </div>
