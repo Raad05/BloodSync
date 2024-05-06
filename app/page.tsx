@@ -1,4 +1,3 @@
-import LandingPage from "./landingPage/page";
 import "./globals.css";
 import HomePage from "./landingPage/page";
 
